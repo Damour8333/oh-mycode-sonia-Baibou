@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Quicksand&display=swap');
+
+
+
+/*éliminés tous les styles par défault*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*modifier la valeur de référence de lélément racine html à 62.5% 1 rem vaut 10px */
+html{
+    font-size: 62.5%;/*1 rem =10px*/
+
+}
+
+/*les styles généraux*/
+body{
+    font-size:1.4rem;/* soit 14px*/
+    font-family:arial,sans-serif;
+    font-family: 'Quiksand',sans-serif;
+     
+}
+
+/*style de la balise .container avec flex*/
+
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    background-color:#1E2337;
+    color:#fff;
+    
+}
+
+/*STYLE MENU DESKSTOP*/
+ .navbar-desktop{
+    height: 8rem;/*80px*/
+    line-height:8rem;/*centre verticalement*/
+    text-align: center;/*centre horizontalement*/
+} 
+
+/*style des liens*/
+.navbar-desktop a{
+    padding: 3rem;
+}
+
+/*STYLE MENU MOBILE*/
+.navbar-mobile{
+    display: none;
+}
+.navbar-mobile i{
+    
+    position: fixed;
+    z-index: 9999;
+    top: 9px;
+    right: 15px;
+    font-size: 3rem;
+    color: white;/*couleur provisoire*/
+}
+.navbar-mobile .modal{
+    background-color:#F92995;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+
+}
+
+.navbar-mobile .navbar-mobile-list{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-mobile .navbar-mobile-list a{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #1E2337;
+    padding: 2rem;
+}
+
