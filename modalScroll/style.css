@@ -1,0 +1,105 @@
+/*éliminés tous les styles par défault*/
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    text-decoration: none;
+}
+
+/*modifier la valeur de référence de lélément racine html à 62.5% 1 rem vaut 10px */
+html{
+    font-size: 62.5%;/*1 rem =10px*/
+
+}
+
+/*les styles généraux*/
+body{
+    font-size:1.4rem;/* soit 14px*/
+    font-family:arial,sans-serif;
+    color:#fff;
+
+}
+
+/*style de la balise .container avec flex*/
+
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    background-color:#1E2337;
+    
+}
+
+.part2{
+    background-color: orange;
+}
+.part3{
+    background-color:orangered
+}
+/*MODAL*/
+.modal-container{
+    
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(136,222,136,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-container{
+    display: none;
+}
+.modal-details{
+    background-color:white;
+    width: 50%;
+    text-align:center;
+    position: relative;/*Pour positionner l'icone*/
+    padding: 3rem;
+    color: #1E2337;
+}
+
+.modal-details i{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: grey;
+
+
+
+}
+
+/*le titre */
+
+.modal-titre{
+    /* display: none; */
+    font-size: 3rem;
+    font-weight: 900; 
+    margin-bottom: 1rem;
+}
+
+/*LE CODE*/
+.code{
+    display: none;
+    background-color:black;
+    color: white;
+    font-family: monospace;
+    padding: 1rem;
+}
+
+/*LE BOUTON*/
+.btn-success{
+    /* display: none; */
+       height: 4rem;
+       background-color: rgb(231,171,61);
+       color: white;
+       border: none;
+       width: 100%;
+}
