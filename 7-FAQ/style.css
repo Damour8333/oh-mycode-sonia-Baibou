@@ -1,0 +1,55 @@
+/*éliminés tous les styles par défault*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*modifier la valeur de référence de lélément racine html à 62.5% 1 rem vaut 10px */
+html{
+    font-size: 62.5%;/*1 rem =10px*/
+
+}
+
+/*les styles généraux*/
+body{
+    font-size:1.4rem;/* soit 14px*/
+    font-family:arial,sans-serif;
+
+}
+
+/*style de la balise .container avec flex*/
+
+ .container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    
+    
+}
+.banniere-titre{
+    margin-bottom:1rem
+} 
+
+.question{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 2rem;
+    border-bottom: 1px solid #777;
+    
+}
+
+.reponse{
+    color: #777;
+    background-color: #eee;
+    padding: 3rem;
+    display: none;
+}
+
+.visible{
+    display: block;
+}
