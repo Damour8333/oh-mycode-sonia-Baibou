@@ -1,0 +1,100 @@
+/*éliminés tous les styles par défault*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*modifier la valeur de référence de lélément racine html à 62.5% 1 rem vaut 10px */
+html{
+    font-size: 62.5%;/*1 rem =10px*/
+
+}
+
+/*les styles généraux*/
+body{
+    font-size:1.4rem;/* soit 14px*/
+    font-family:arial,sans-serif;
+
+}
+
+/*style de la balise .container avec flex*/
+
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    background-color:#1E2337;
+    color:#fff
+}
+.banniere-titre{
+    margin-bottom:1rem
+}
+
+.produit-container{
+    width: 80%;
+    background-color: white;
+    color: grey;
+    display: flex;
+
+}
+
+/*IMAGES PRODUIT A GAUCHE*/
+.produits-images{
+    flex: 1;
+}
+/*INFOS PRODUIT A DROITE*/
+.produits-infos{
+    flex: 1;
+    padding: 2rem;
+}
+
+/*l' image ne depasse pas de son contenant*/
+.full-img-container{
+    height: 350px;
+    overflow: hidden;
+}
+
+/*l'image est complétement visible dans  sa largeur*/
+#full{
+    max-width: 100%;
+}
+
+/* flex pour positionner les éléments en colonne sur la version mobile*/
+
+.vignette-container{
+    display: flex;
+}
+.small{
+    flex: 1;
+    width: 30%;
+    margin: 1rem;
+}
+.produits-infos{
+    flex: 1;
+    padding: 2rem;
+    flex-direction: column;
+}
+h1.produits-titre{
+    font-size: 4rem;
+}
+
+p.produits-prix{
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.description{
+    font-size: 2rem;
+}
+button.btn-add{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    outline: none;
+    border: none;
+    margin: 2rem 0;
+}
