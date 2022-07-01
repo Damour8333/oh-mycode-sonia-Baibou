@@ -33,7 +33,7 @@ body{
 .banniere-titre{
     margin-bottom:1rem
 }
-
+/*fiche produit*/
 .produit-container{
     width: 80%;
     background-color: white;
@@ -54,7 +54,7 @@ body{
 
 /*l' image ne depasse pas de son contenant*/
 .full-img-container{
-    height: 350px;
+    height: 260px;
     overflow: hidden;
 }
 
@@ -76,7 +76,7 @@ body{
 .produits-infos{
     flex: 1;
     padding: 2rem;
-    flex-direction: column;
+    
 }
 h1.produits-titre{
     font-size: 4rem;
@@ -97,4 +97,25 @@ button.btn-add{
     outline: none;
     border: none;
     margin: 2rem 0;
+}
+
+@media screen and (max-width:800px){
+    .container{
+        height: auto;/*annule la height :100vh*/
+    }
+    .produit-container{
+        flex-direction: column;
+    }
+    .full-img-container{
+        height: auto;/*annule la height :350 pixels*/
+
+    }
+    .vignettes-container{
+        flex-direction:column;
+        width: 100%;
+        align-items: center;
+    }
+    .small{
+        width: 50%;
+    }
 }
