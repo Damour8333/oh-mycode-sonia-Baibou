@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modéle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="banniere-titre">
+            <h1>
+                Trouvez votre prochaine destination
+            </h1>
+        </div>
+        <form id="form">
+            
+            <div class="field">
+                <select id="pays">
+                    <option value="Hawai">
+                        Hawai
+                    </option>
+                    <option value="maldives">maldives</option>
+                    <option value="bahamas">Bahamas</option>
+                    <option value="borabora">BoraBora</option>
+                    <option value="tahiti">Tahiti</option>
+                </select>
+
+            </div>
+            <!-- date de départ -->
+
+            <div class="field">
+                <input type="date" id="start" value="2022-06-02" min="2021-06-01">
+            </div>
+            <div class="field">
+                <input type="date" id="end" value="2022-06-02" min="2021-06-01">
+            </div>
+            <button type="submit"><i class="fas fa-plane"></i></button>
+        </form>
+    </div>
+    <div class="liste-resultats">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--echo "# oh-mycode-sonia-Baibou" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Damour8333/oh-mycode-sonia-Baibou.git
+git push -u origin main-->
